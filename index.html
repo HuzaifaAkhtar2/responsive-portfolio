@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Tommy.</a>
+            <div class="mobile" id="menu"><i class='bx bx-menu-alt-right' ></i></div>
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="link active">home</a>
+                <a href="#about" class="link">about</a>
+                <a href="#education" class="link">education</a>
+                <a href="#skills" class="link">skills</a>
+                <a href="#work" class="link">work</a>
+                <a href="#contact" class="link">contact</a>
+                <div class="mobile close" id="close"><i class='bx bx-x' ></i></div>
+
+            </nav>
+        </div>
+
+    </header>
+    <section class="home" id="home">
+        <div class="container">
+            <div class="content">
+                <h1 class="title"><span>Hi,</span> <br> I'm Tommy Hardy</h1>
+                <div class="subtitle">
+                    <h3 class="text"> UI Designer</h3>
+                    <h3 class="bg"> UI Designer</h3>
+
+                </div>
+                <div class="desc">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, autem porro voluptatum
+                        voluptate
+                        maxime magnam!
+                    </p>
+                </div>
+                <div class="home-btns">
+                    <button class="btn btn-outline">let's talk</button>
+                    <button class="btn btn-primary">Hire Me</button>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="social-media">
+            <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="social"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="social"><i class='bx bxl-behance'></i></a>
+            <a href="#" class="social"><i class='bx bxl-linkedin'></i></a>
+
+        </div>
+    </section>
+
+    <script>
+
+        const navbar =document.getElementById('navbar')
+        const closeMenu =document.getElementById('close')
+        const menu =document.getElementById('menu')
+
+        menu.addEventListener('click', ()=>{
+            navbar.classList.add('active')
+        })
+        closeMenu.addEventListener('click', ()=>{
+            navbar.classList.remove('active')
+        })
+
+    </script>
+</body>
+
+</html>
